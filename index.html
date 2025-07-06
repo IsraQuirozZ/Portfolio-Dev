@@ -206,26 +206,33 @@
         <p>
           I'll be happy to help you, if you need anything please let me know.
         </p>
-        <form action="" class="contact__form" id="contact-form">
-          <input type="text" placeholder="Your Name" />
-          <input type="Email" placeholder="yourMail@example.com" />
-          <textarea
-            name="message"
-            id="form-message"
-            placeholder="Your message here..."
-          ></textarea>
-          <input type="submit" class="btn" value="Send" />
-        </form>
+        <div class="form__container">
+          <form action="" class="contact__form" id="contact-form">
+            <h3>Send <span>Message</span></h3>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="Email" placeholder="yourMail@example.com" />
+            <textarea
+              name="message"
+              id="form-message"
+              placeholder="Your message here..."
+            ></textarea>
+            <input type="submit" class="btn" value="Send" />
+          </form>
+        </div>
       </section>
     </main>
+
     <div class="social__icons" id="social-icons">
-      <div class="social__icons-line"></div>
-      <a href="https://github.com/IsraQuirozZ" target="_blank"
-        ><i class="fa-brands fa-github"></i
-      ></a>
-      <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <div class="social__icons-line"></div>
+      <div class="social__icons-container">
+        <div class="social__icons-line"></div>
+        <a href="https://github.com/IsraQuirozZ" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <div class="social__icons-line"></div>
+      </div>
     </div>
     <footer id="footer">
       <p>Copyright © | Designed and Coded by Isra <span>QuirozZ</span>⚡</p>

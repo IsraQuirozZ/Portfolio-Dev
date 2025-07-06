@@ -327,13 +327,13 @@ section {
 
 /* PROJECTS */
 .projects {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   height: auto;
-  background-color: skyblue;
+  /* background-color: skyblue; */
 }
 
 .projects_grid {
-  background-color: pink;
+  /* background-color: pink; */
   width: 100%;
   display: grid;
   gap: 1.5rem;
@@ -392,26 +392,29 @@ section {
 
 /* CONTACT */
 .contact {
-  /* background-color: gray; */
-  /* height: auto; */
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  height: auto;
+  padding: 3.5rem 5% 2rem 5%;
 }
 
 .contact h2 {
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
 }
 .contact h3 {
-  margin-top: 30px;
+  font-size: 1.5rem;
 }
-.contact__form {
+
+.form__container {
+  padding: 2rem 1rem;
+  background-color: rgba(101, 101, 101, 0.493);
   margin-top: 20px;
+  border-radius: 15px;
+}
+
+.contact__form {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 50%;
   justify-content: center;
 }
 
@@ -449,15 +452,25 @@ textarea::placeholder {
 /* SOCIAL ICONS */
 .social__icons {
   position: sticky;
+  z-index: 998;
   width: 100%;
   bottom: 30px;
+  display: flex;
+  justify-content: center;
+  /* height: 80px; */
+}
+
+.social__icons-container {
+  background-color: rgba(30, 29, 29, 0.771);
+  backdrop-filter: blur(3px);
+  width: auto;
+  padding: 1.2rem;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  z-index: 998;
-  /* background-color: var(--black-color); */
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .social__icons-line {
