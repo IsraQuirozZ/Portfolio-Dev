@@ -32,9 +32,6 @@
               <a href="#" class="nav__link">[About Me]</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">[Skills]</a>
-            </li>
-            <li class="nav__item">
               <a href="#" class="nav__link">[Projects]</a>
             </li>
             <li class="nav__item">
@@ -45,6 +42,7 @@
       </nav>
     </header>
     <main class="main-container">
+      <!-- HOME -->
       <section class="home" id="home">
         <img
           src="./assets/images/Isra.png"
@@ -53,9 +51,9 @@
         />
         <h1>
           Hello I'm Isra QuirozZ -
-          <span id="changing-word">Front-End Dev</span> !
+          <span id="changing-word">Front-End Dev</span>
         </h1>
-        <p>
+        <p class="home__text">
           Transforming ideas into <span>web</span> experiences, one line at
           time.
         </p>
@@ -64,18 +62,200 @@
           <a href="#" class="btn">View CV</a>
         </div>
       </section>
-      <section class="about" id="about">About me</section>
-      <section class="skills" id="skills">skills</section>
-      <section class="contact" id="contact">contacto</section>
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <div class="about__me">
+          <div class="about__me-text">
+            <h2>About <span>Me</span></h2>
+            <p>
+              I’m a <span>web dev</span> focused on building clean, modern and
+              responsive interfaces. I’m currently deeping my skills in Apps
+              Development with Kotlin.
+            </p>
+            <p>
+              I love exploring new technologies and turning ideas into smooth,
+              user-friendly experiences.
+            </p>
+          </div>
+          <ul class="about__info">
+            <li>
+              <span><strong>Location:</strong></span> Madrid, Spain
+            </li>
+            <li>
+              <span><strong>Speciality:</strong></span> Front-End Developer
+            </li>
+            <li>
+              <span><strong>Languages:</strong></span> Spanish (Native), English
+              (B2)
+            </li>
+          </ul>
+        </div>
+        <h2 class="my-resume">My Resume</h2>
+        <div class="experience">
+          <div class="experience-left">
+            <h4>Some of my finest <span>Skills</span></h4>
+            <div class="skills-container">
+              <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <p class="p-small">HTML</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="p-small">CSS</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-brands fa-js"></i>
+                <p class="p-small">JS</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-brands fa-react"></i>
+                <p class="p-small">React</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p class="p-small">SQL</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-brands fa-figma"></i>
+                <p class="p-small">Figma</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-brands fa-java"></i>
+                <p class="p-small">Java</p>
+              </div>
+
+              <div class="skill">
+                <i class="fa-brands fa-python"></i>
+                <p class="p-small">Python</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Multiplatform Apps Developement</h4>
+                <p class="sub">Ilerna - Madrid, 2024 - 2025</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>AI DietaApp</h4>
+                <p class="sub">Intership Project - 2025</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Full-Stack Career</h4>
+                <p class="sub">CoderHouse - Remote, 2023</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>Curso FullStack</h4>
+                <p class="sub">Udemy, 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section class="projects" id="projects">
+        <h2 class="projects__title">Latest <span>Projects</span></h2>
+        <div class="projects_grid">
+          <div class="project">
+            <img
+              src="./assets/images/DietaApp.png"
+              alt="Proyecto Dietas"
+              class="project__img"
+            />
+            <div class="project__info"></div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/images/Decó E-commerce.png"
+              alt="Proyecto Dietas"
+              class="project__img"
+            />
+            <div class="project__info"></div>
+          </div>
+          <div class="project">
+            <img
+              src="./assets/images/Inmovibe.png"
+              alt="Proyecto Dietas"
+              class="project__img"
+            />
+            <div class="project__info"></div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <h2>Get In <span>Touch</span></h2>
+        <p>
+          I'll be happy to help you, if you need anything please let me know.
+        </p>
+        <div class="contact__container">
+          <div class="contact__left">
+            <div class="form__container">
+              <form action="" class="contact__form" id="contact-form">
+                <h3>Send <span>Message</span></h3>
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+                <input type="Email" placeholder="yourMail@example.com" />
+                <textarea
+                  name="message"
+                  id="form-message"
+                  placeholder="Your message here..."
+                ></textarea>
+                <input type="submit" class="btn" value="Send" />
+              </form>
+            </div>
+          </div>
+          <div class="contact__right">
+            <ul class="contact__info">
+              <li>
+                <span><strong>Ubicación:</strong></span> Madrid, España
+              </li>
+              <li>
+                <span><strong>Especialidad:</strong></span> Front-End Developer
+              </li>
+              <li>
+                <span><strong>Actualmente aprendiendo:</strong></span> Node.js y
+                MongoDB
+              </li>
+              <li>
+                <span><strong>Idiomas:</strong></span> Español, Inglés B2
+              </li>
+            </ul>
+            <button class="btn">View CV</button>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- SOCIAL ICONS -->
     <div class="social__icons" id="social-icons">
-      <div class="social__icons-line"></div>
-      <a href="https://github.com/IsraQuirozZ" target="_blank"
-        ><i class="fa-brands fa-github"></i
-      ></a>
-      <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <div class="social__icons-line"></div>
+      <div class="social__icons-container">
+        <div class="social__icons-line"></div>
+        <a href="https://github.com/IsraQuirozZ" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <div class="social__icons-line"></div>
+      </div>
     </div>
     <footer id="footer">
       <p>Copyright © | Designed and Coded by Isra <span>QuirozZ</span>⚡</p>
