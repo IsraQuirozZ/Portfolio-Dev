@@ -173,75 +173,140 @@
       </section>
       <!-- PROJECTS -->
       <section class="projects" id="projects">
-        <h2 class="projects__title">Latest <span>Projects</span></h2>
-        <div class="projects_grid">
+        <h2>Latest <span>Projects</span></h2>
+        <div class="projects-container">
+          <!-- PROJECT 1 -->
           <div class="project">
-            <img
-              src="./assets/images/DietaApp.png"
-              alt="Proyecto Dietas"
-              class="project__img"
-            />
-            <div class="project__info"></div>
+            <div class="project-image__wrapper">
+              <img
+                src="assets/images/Aboutme.png"
+                alt="HostelHub"
+                class="project-img"
+              />
+              <div class="tech-overlay">
+                <span class="badge">React</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">ExpressJS</span>
+                <span class="badge">NodeJs</span>
+                <span class="badge">Express-jtw</span>
+                <span class="badge">Figma</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <h3>HostelHub</h3>
+              <p>
+                Web platform that combines hostel bookings with a social
+                experience feed.
+              </p>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="btn">Repo</a>
+              <a class="btn disabled-link" aria-disabled="true">Demo</a>
+            </div>
           </div>
+          <!-- PROJECT 2 -->
           <div class="project">
-            <img
-              src="./assets/images/Decó E-commerce.png"
-              alt="Proyecto Dietas"
-              class="project__img"
-            />
-            <div class="project__info"></div>
+            <div class="project-image__wrapper">
+              <img
+                src="assets/images/DietaApp.png"
+                alt="DietaApp"
+                class="project-img"
+              />
+              <div class="tech-overlay">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">PHP</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Figma</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <h3>DietaApp</h3>
+              <p>
+                AI app that generates personalized meal plans tailored to your
+                goals and preferences.
+              </p>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="btn">Repo</a>
+              <a class="btn disabled-link" aria-disabled="true">Demo</a>
+            </div>
           </div>
+
+          <!-- PROJECT 3 -->
           <div class="project">
-            <img
-              src="./assets/images/Inmovibe.png"
-              alt="Proyecto Dietas"
-              class="project__img"
-            />
-            <div class="project__info"></div>
+            <div class="project-image__wrapper">
+              <img
+                src="assets/images/Decó E-commerce.png"
+                alt="DietaApp"
+                class="project-img"
+              />
+              <div class="tech-overlay">
+                <span class="badge">MongoDB</span>
+                <span class="badge">ExpressJS</span>
+                <span class="badge">React</span>
+                <span class="badge">NodeJs</span>
+                <span class="badge">Figma</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <h3>Decó</h3>
+              <p>
+                Minimalist e-commerce simulator. It focuses on clean UI and
+                essential store functionality.
+              </p>
+            </div>
+            <div class="project-buttons">
+              <a href="#" class="btn">Repo</a>
+              <a class="btn disabled-link" aria-disabled="true">Demo</a>
+            </div>
           </div>
         </div>
+        <a href="#" class="btn allProjects">View All Projects</a>
       </section>
       <!-- CONTACT -->
       <section class="contact" id="contact">
-        <h2>Get In <span>Touch</span></h2>
-        <p>
-          I'll be happy to help you, if you need anything please let me know.
-        </p>
-        <div class="contact__container">
-          <div class="contact__left">
-            <div class="form__container">
-              <form action="" class="contact__form" id="contact-form">
-                <h3>Send <span>Message</span></h3>
-                <input type="text" placeholder="First Name" />
-                <input type="text" placeholder="Last Name" />
-                <input type="Email" placeholder="yourMail@example.com" />
-                <textarea
-                  name="message"
-                  id="form-message"
-                  placeholder="Your message here..."
-                ></textarea>
-                <input type="submit" class="btn" value="Send" />
-              </form>
-            </div>
+        <h2>Contact <span>Me</span></h2>
+        <div class="contact-container">
+          <div class="contact-text">
+            <h3>Let's talk about your <span>Next Project</span>!</h3>
+            <p>
+              Looking for a developer to join your team or help with your next
+              project?
+            </p>
+            <p>I’m open to new opportunities.</p>
+            <p>
+              Feel free to reach out - I’ll get back to you as soon as possible.
+            </p>
+            <div class="btn">View CV</div>
           </div>
-          <div class="contact__right">
-            <ul class="contact__info">
-              <li>
-                <span><strong>Ubicación:</strong></span> Madrid, España
-              </li>
-              <li>
-                <span><strong>Especialidad:</strong></span> Front-End Developer
-              </li>
-              <li>
-                <span><strong>Actualmente aprendiendo:</strong></span> Node.js y
-                MongoDB
-              </li>
-              <li>
-                <span><strong>Idiomas:</strong></span> Español, Inglés B2
-              </li>
-            </ul>
-            <button class="btn">View CV</button>
-          </div>
+          <form action="" class="contact-form">
+            <input
+              placeholder="First Name"
+              type="text"
+              name="firstName"
+              id="firstName"
+            />
+            <input
+              placeholder="Last Name"
+              type="text"
+              name="lastName"
+              id="lastName"
+            />
+            <input
+              placeholder="yourMail@example.com"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message here..."
+            ></textarea>
+            <input type="submit" class="btn" value="Send" />
+          </form>
         </div>
       </section>
     </main>
