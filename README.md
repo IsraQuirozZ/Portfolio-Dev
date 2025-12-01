@@ -15,29 +15,36 @@ Su diseño está optimizado para ofrecer una experiencia fluida tanto en escrito
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5** – estructura semántica y optimizada  
-- **CSS3** – responsive design, flexbox, grid y animaciones  
-- **JavaScript Vanilla** – interactividad del sitio (navbar, animaciones, efectos)  
-- **EmailJS / FormSubmit** – envío del formulario de contacto  
-- **Git + GitHub** – control de versiones y deploy  
+- **HTML5** – estructura semántica y optimizada
+- **CSS3** – responsive design, flexbox, grid y animaciones
+- **JavaScript Vanilla** – interactividad del sitio (navbar, animaciones, efectos)
+- **EmailJS / FormSubmit** – envío del formulario de contacto
+- **Git + GitHub** – control de versiones y deploy
+- **Figma** – Diseño del Portfolio
 
 ---
 
-## 📸 Capturas del Sitio / GIFs
+## 📸 Capturas del Sitio
 
-> *(Reemplaza estas rutas por tus capturas reales)*
+### Hoja de estilos
 
-### 🏠 Home  
-![Home Section](./assets/screenshots/home.png)
+![Style Sheet](./assets/images/estilos.png)
 
-### 👨‍💻 About Me  
-![About Section](./assets/screenshots/about.png)
+### 🏠 Home
 
-### 💼 Projects  
-![Projects Section](./assets/screenshots/projects.png)
+![Home Section](./assets/images/home.png)
 
-### 📬 Contact  
-![Contact Section](./assets/screenshots/contact.png)
+### 👨‍💻 About Me
+
+![About Section](./assets/images/about.png)
+
+### 💼 Projects
+
+![Projects Section](./assets/images/projects.png)
+
+### 📬 Contact
+
+![Contact Section](./assets/images/contact.png)
 
 ---
 
@@ -46,5 +53,7 @@ Su diseño está optimizado para ofrecer una experiencia fluida tanto en escrito
 Puedes ejecutar este portafolio localmente siguiendo estos pasos:
 
 ### 1. Clonar el repositorio
+
 ```bash
 git clone https://github.com/tu-usuario/tu-portfolio.git
+```
