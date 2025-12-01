@@ -75,10 +75,12 @@ const campos = {
 
 const showError = (input) => {
   input.classList.add("invalid");
+  errorMsg.style.visibility = "visible";
 };
 
 const clearError = (input) => {
   input.classList.remove("invalid");
+  errorMsg.style.visibility = "hidden";
 };
 
 const formValidation = (e) => {
@@ -140,6 +142,23 @@ inputs.forEach((input) => {
 textArea.addEventListener("keyup", formValidation);
 textArea.addEventListener("blur", formValidation);
 
+// POP-UP
+const popup = document.getElementById("form-popup");
+const closePopup = document.getElementById("close-popup");
+
+function showPopup() {
+  popup.classList.add("show");
+
+  setTimeout(() => {
+    popup.classList.remove("show");
+  }, 3000);
+}
+
+// Botón de cerrar
+closePopup.addEventListener("click", () => {
+  popup.classList.remove("show");
+});
+
 form.addEventListener("submit", (e) => {
   if (
     campos["firstName"] &&
@@ -147,10 +166,12 @@ form.addEventListener("submit", (e) => {
     campos["email"] &&
     campos["message"]
   ) {
-    alert("Enviado!");
+    showPopup();
+    form.reset();
     e.preventDefault();
   } else {
-    alert("Nope");
+    // alert("Nope");
+    errorMsg.style.visibility = "visible";
     e.preventDefault();
   }
 });

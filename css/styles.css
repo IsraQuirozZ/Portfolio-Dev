@@ -534,6 +534,56 @@ textarea:focus::placeholder {
 .error-msg {
   /* margin: 15px; */
   font-size: 1rem;
+  visibility: hidden;
+}
+
+/* POPUP */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.popup.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popup-content {
+  background: var(--black-color);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid var(--hover-color);
+  font-family: var(--secondary-font);
+}
+
+.popup-content p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.popup-content button {
+  padding: 0.5rem 1rem;
+  background: inherit;
+  border: 2px solid var(--hover-color);
+  border-radius: 6px;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.popup-content button:hover {
+  background: var(--hover-color);
+  color: black;
 }
 
 /*----------------------*/

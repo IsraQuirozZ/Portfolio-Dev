@@ -308,18 +308,21 @@
           </div>
           <form action="" class="contact-form">
             <input
+              required
               placeholder="First Name"
               type="text"
               name="firstName"
               id="firstName"
             />
             <input
+              required
               placeholder="Last Name"
               type="text"
               name="lastName"
               id="lastName"
             />
             <input
+              required
               placeholder="yourMail@example.com"
               type="email"
               name="email"
@@ -330,10 +333,18 @@
               id="message"
               placeholder="Your message here..."
             ></textarea>
+            <p class="error-msg">Rellena correctamente el formulario</p>
             <input type="submit" class="btn" value="Send" />
           </form>
         </div>
       </section>
+      <!-- POPUP -->
+      <div id="form-popup" class="popup">
+        <div class="popup-content">
+          <p>¡Mensaje enviado correctamente!</p>
+          <button id="close-popup">OK</button>
+        </div>
+      </div>
     </main>
     <!-- SOCIAL ICONS -->
     <div class="social__icons" id="social-icons">
@@ -342,7 +353,11 @@
         <a href="https://github.com/IsraQuirozZ" target="_blank"
           ><i class="fa-brands fa-github"></i
         ></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a
+          href="https://www.linkedin.com/in/israel-quiroz-de-zaldo-763192203/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
         <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <div class="social__icons-line"></div>
       </div>
