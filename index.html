@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Israel QuirozZ</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="icon" href="./assets/icons/" type="image/png" /> -->
+    <link rel="icon" type="image/jpg" href="./assets/icons/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
     <header class="header">
       <nav class="nav">
         <div class="nav__data">
-          <a href="#" class="nav__logo">Isra QuirozZ</a>
+          <a href="#home" class="nav__logo">Isra QuirozZ</a>
           <div class="nav__toggle" id="nav-toggle">
             <i class="fa-solid fa-bars nav__burger"></i>
             <i class="fa-solid fa-xmark nav__close"></i>
@@ -59,7 +59,12 @@
         </p>
         <div class="home__buttons">
           <a href="#contact" class="btn">Contact Me</a>
-          <a href="#" class="btn">View CV</a>
+          <a
+            href="https://drive.google.com/file/d/1l40bcIS2fjPTwQTjjS8tQnnTwCuCjSPV/view?usp=sharing"
+            class="btn"
+            target="_blank"
+            >View CV</a
+          >
         </div>
       </section>
       <!-- ABOUT -->
@@ -200,7 +205,12 @@
               </p>
             </div>
             <div class="project-buttons">
-              <a href="#" class="btn">Repo</a>
+              <a
+                href="https://github.com/IsraQuirozZ/HostelHub.git"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
               <a class="btn disabled-link" aria-disabled="true">Demo</a>
             </div>
           </div>
@@ -229,7 +239,12 @@
               </p>
             </div>
             <div class="project-buttons">
-              <a href="#" class="btn">Repo</a>
+              <a
+                href="https://github.com/IsraQuirozZ/dietaApp.git"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
               <a class="btn disabled-link" aria-disabled="true">Demo</a>
             </div>
           </div>
@@ -258,7 +273,12 @@
               </p>
             </div>
             <div class="project-buttons">
-              <a href="#" class="btn">Repo</a>
+              <a
+                href="https://github.com/IsraQuirozZ/proyecto-backend.git"
+                class="btn"
+                target="_blank"
+                >Repo</a
+              >
               <a class="btn disabled-link" aria-disabled="true">Demo</a>
             </div>
           </div>
@@ -279,7 +299,12 @@
             <p>
               Feel free to reach out - I’ll get back to you as soon as possible.
             </p>
-            <div class="btn">View CV</div>
+            <a
+              href="https://drive.google.com/file/d/1l40bcIS2fjPTwQTjjS8tQnnTwCuCjSPV/view?usp=sharing"
+              class="btn"
+              target="_blank"
+              >View CV</a
+            >
           </div>
           <form action="" class="contact-form">
             <input
@@ -331,5 +356,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="./scripts/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("TU_PUBLIC_KEY");
+      })();
+    </script>
   </body>
 </html>
